@@ -1,10 +1,11 @@
 import Perfil from "../../assets/img/LOGO HACKER TECNOLOGICO.png";
 import "./card.css";
+
 export function CardHome() {
   return (
     <div
       className="d-flex justify-content-center align-items-center"
-      style={{ minHeight: "70vh" }}>
+      style={{ minHeight: "90vh" }}>
       <div className="card rounded text-white bg-primary mb-3">
         <div className="card-header bg-dark">Quien soy?</div>
         <div className="card-body">

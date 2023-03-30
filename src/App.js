@@ -1,16 +1,22 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { CardHome } from "./components/card/card";
-import { NavbarVertical } from "./components/navBar/navbarVertical";
-import Sidebar from "./components/navbarKaren/navbarK";
+import { Sidebar } from "./components/sidebar/sidebar";
 function App() {
   return (
-    <div className="App">
-      <NavbarVertical />
-      <div className="container p-4">
-        <CardHome />
-        <Sidebar />
-      </div>
-    </div>
+    <BrowserRouter>
+      <Sidebar>
+        <Routes>
+          <Route path="/" element={<CardHome />} />
+          <Route path="/dashboard" element={<CardHome />} />
+          <Route path="/about" element={<CardHome />} />
+          <Route path="/comment" element={<CardHome />} />
+          <Route path="/analytics" element={<CardHome />} />
+          <Route path="/product" element={<CardHome />} />
+          <Route path="/pdf" element={<CardHome />} />
+        </Routes>
+      </Sidebar>
+    </BrowserRouter>
   );
 }
 
