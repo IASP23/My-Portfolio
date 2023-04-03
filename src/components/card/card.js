@@ -7,12 +7,14 @@ export function CardHome() {
       className="d-flex justify-content-center align-items-center"
       style={{ minHeight: "90vh" }}>
       <div className="card rounded text-white bg-primary mb-3">
-        <div className="card-header bg-dark">Quien soy?</div>
+        <div className="card-header bg-dark" id="font_card">
+          Quien soy?
+        </div>
         <div className="card-body">
           <div className="row">
-            <div className="col-sm-8 p-5 text-center">
-              <h4 className="card-title">Hola mi nombre es Ismael</h4>
-              <p className="card-text  ">
+            <div className="col-sm-8 text-center">
+              <h4 className="card-title p-4">Hola mi nombre es Ismael</h4>
+              <p className="card-text">
                 Soy un estudiante de Ingenieria en Software, me encanta
                 programar y disfruto mucho el estar actualizado con las
                 tendecias relacionadas a la Tecnólogia, me interesa en especial

@@ -3,7 +3,6 @@ import {
   FaBars,
   FaUserAlt,
   FaProjectDiagram,
-  FaCommentAlt,
   FaPhoneAlt,
 } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
@@ -20,19 +19,9 @@ export const Sidebar = ({ children }) => {
       icon: <FaUserAlt />,
     },
     {
-      path: "/about",
-      name: "About",
-      icon: <FaUserAlt />,
-    },
-    {
       path: "/projects",
       name: "Projects",
       icon: <FaProjectDiagram />,
-    },
-    {
-      path: "/skills",
-      name: "Skills",
-      icon: <FaCommentAlt />,
     },
     {
       path: "/contact",
@@ -40,8 +29,8 @@ export const Sidebar = ({ children }) => {
       icon: <FaPhoneAlt />,
     },
     {
-      path: "/productList",
-      name: "Product List",
+      path: "/pdf",
+      name: "pdf",
       icon: <BsFileEarmarkPdf />,
     },
   ];
